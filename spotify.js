@@ -30,7 +30,7 @@ const getArtist = artists => {
 	return { name, id };
 };
 
-const getAlbumInfo = ({ id, name, release_date, images, artists }) => ({
+const getAlbumInfo = ({ id, name, release_date, uri, images, artists }) => ({
 	id,
 	name,
 	release_date,
