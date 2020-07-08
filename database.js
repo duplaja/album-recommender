@@ -16,7 +16,8 @@ const AlbumSchema = new mongoose.Schema(
 			id: String
 		},
 		release_date: String,
-		image: String
+		image: String,
+		link: String
 	},
 	{ _id: false }
 );
