@@ -187,7 +187,7 @@ const Search = ({ onSearch, loading, ...props }) => (
 
 const Favorites = ({ loading, ...props }) => (
 	<div>
-		<div className="label white big small-caps">favorites</div>
+		<div className="label white big small-caps"><h2>Favorites</h2></div>
 		{loading ? (
 			<Spinner className="spinner" intent="primary" />
 		) : (
@@ -198,7 +198,7 @@ const Favorites = ({ loading, ...props }) => (
 
 const Recommendations = ({ loading, ...props }) => (
 	<div>
-		<div className="label white big small-caps">recommendations</div>
+		<div className="label white big small-caps"><h2>Recommendations</div>
 		{loading ? (
 			<Spinner className="spinner" intent="primary" />
 		) : (
