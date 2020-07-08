@@ -30,16 +30,11 @@ const getArtist = artists => {
 	return { name, id };
 };
 
-function getURL(uri) {
-	
-	return 'https://open.spotify.com/album/'+uri.substring(0, uri.lastIndexOf(":") );	
-}
-
 const getAlbumInfo = ({ id, name, release_date, uri, images, artists }) => ({
 	id,
 	name,
 	release_date,
-	uri = getURL(uri),
+	uri,
 	image: getImage(images),
 	artist: getArtist(artists)
 });
