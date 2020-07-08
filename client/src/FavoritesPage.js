@@ -71,7 +71,7 @@ const Album = ({ album, onFavorite, hidable, onHide }) => (
 			<div
 				className="album-title tile__title"
 			>
-				{album.name}
+				{album.name} {album.uri}
 			</div>
 			<div className="artist-container">
 				<div
