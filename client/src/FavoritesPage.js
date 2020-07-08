@@ -198,7 +198,7 @@ const Favorites = ({ loading, ...props }) => (
 
 const Recommendations = ({ loading, ...props }) => (
 	<div>
-		<div className="label white big small-caps"><h2>Recommendations</div>
+		<div className="label white big small-caps"><h2>Recommendations</h2></div>
 		{loading ? (
 			<Spinner className="spinner" intent="primary" />
 		) : (
