@@ -58,7 +58,7 @@ const resetBanner = event => {
 	event.target.scrollTo(0, 0);
 };
 
-const getURL = uri => {
+function getURL(uri) {
 	
 	return 'https://open.spotify.com/album/'+uri.substring(0, uri.lastIndexOf(":") );	
 }
@@ -78,7 +78,7 @@ const Album = ({ album, onFavorite, hidable, onHide }) => (
 			>
 			<a	
 				target="_blank"
-				href=${getURL(${album.uri)}}
+				href={ getURL(${album.uri}) }
 
 			>
 				{album.name} 
