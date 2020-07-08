@@ -89,6 +89,9 @@ const Album = ({ album, onFavorite, hidable, onHide }) => (
 
 		<Icon
 			className="favorite-button tile__favorite bp3-dark"
+			role="button"
+			aria-label="Favorite {album.name}"
+			aria-pressed={album.favorite ? 'false' : 'true'}
 			icon={album.favorite ? 'heart-broken' : 'heart'}
 			iconSize="32"
 			onClick={() => onFavorite({ ...album, favorite: !album.favorite })}
