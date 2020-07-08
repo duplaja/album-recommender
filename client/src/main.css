@@ -241,6 +241,10 @@ div.album {
 	font-variant: small-caps;
 }
 
+div.small-caps h2 {
+	margin-top:0px;
+}
+
 .favorite-button span {
 	line-height: 0;
 }
