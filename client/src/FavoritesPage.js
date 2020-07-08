@@ -70,16 +70,12 @@ const Album = ({ album, onFavorite, hidable, onHide }) => (
 		<div className="tile__details">
 			<div
 				className="album-title tile__title"
-				onMouseOver={scrollBanner}
-				onMouseOut={resetBanner}
 			>
 				{album.name}
 			</div>
 			<div className="artist-container">
 				<div
 					className="artist-title tile__title"
-					onMouseOver={scrollBanner}
-					onMouseOut={resetBanner}
 				>
 					{album.artist.name}
 				</div>
@@ -90,8 +86,8 @@ const Album = ({ album, onFavorite, hidable, onHide }) => (
 		<Icon
 			className="favorite-button tile__favorite bp3-dark"
 			role="button"
-			aria-label="Favorite {album.name}"
-			aria-pressed={album.favorite ? 'false' : 'true'}
+			aria-label="Favorite"
+			aria-pressed={album.favorite ? 'true' : 'false'}
 			icon={album.favorite ? 'heart-broken' : 'heart'}
 			iconSize="32"
 			onClick={() => onFavorite({ ...album, favorite: !album.favorite })}
