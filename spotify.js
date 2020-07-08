@@ -34,6 +34,7 @@ const getAlbumInfo = ({ id, name, release_date, images, artists }) => ({
 	id,
 	name,
 	release_date,
+	uri,
 	image: getImage(images),
 	artist: getArtist(artists)
 });
