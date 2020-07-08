@@ -73,7 +73,8 @@ const Album = ({ album, onFavorite, hidable, onHide }) => (
 			>
 			<a	
 				target="_blank"
-				href={album.uri}
+				href={album.url}
+
 			>
 				{album.name} 
 			</a>
