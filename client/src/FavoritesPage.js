@@ -71,7 +71,12 @@ const Album = ({ album, onFavorite, hidable, onHide }) => (
 			<div
 				className="album-title tile__title"
 			>
-				{album.name} {album.uri}
+			<a	
+				target="_blank"
+				href={album.uri}
+			>
+				{album.name} 
+			</a>
 			</div>
 			<div className="artist-container">
 				<div
@@ -86,7 +91,7 @@ const Album = ({ album, onFavorite, hidable, onHide }) => (
 		<Icon
 			className="favorite-button tile__favorite bp3-dark"
 			role="button"
-			aria-label="Favorite"
+			aria-label={`Favorite ${album.name}`}
 			aria-pressed={album.favorite ? 'true' : 'false'}
 			icon={album.favorite ? 'heart-broken' : 'heart'}
 			iconSize="32"
