@@ -58,6 +58,11 @@ const resetBanner = event => {
 	event.target.scrollTo(0, 0);
 };
 
+const getURL = uri => {
+	
+	return 'https://open.spotify.com/album/'+uri.substring(0, uri.lastIndexOf(":") );	
+}
+
 const Album = ({ album, onFavorite, hidable, onHide }) => (
 	<Card interactive={true} elevation={Elevation.ONE} className="album tile">
 		<div className="tile_media">
@@ -73,7 +78,7 @@ const Album = ({ album, onFavorite, hidable, onHide }) => (
 			>
 			<a	
 				target="_blank"
-				href={album.uri}
+				href=${getURL(${album.uri)}}
 
 			>
 				{album.name} 
