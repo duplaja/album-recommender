@@ -30,11 +30,15 @@ const getArtist = artists => {
 	return { name, id };
 };
 
+const getURL = uri => {
+	return uri.substring(0, uri.lastIndexOf(":") );	
+}
+
 const getAlbumInfo = ({ id, name, release_date, uri, images, artists }) => ({
 	id,
 	name,
 	release_date,
-	uri,
+	url: getURL(uri),
 	image: getImage(images),
 	artist: getArtist(artists)
 });
